@@ -308,20 +308,16 @@
   }
 
   .recipe-modal {
+    display: none;
     position: fixed;
     inset: 0;
     z-index: 1000;
-    display: flex;
+    padding: 20px;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.25s ease;
   }
   .recipe-modal:target {
-    opacity: 1;
-    pointer-events: auto;
+    display: flex !important;
   }
   .modal-overlay-bg {
     position: absolute;
